@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie List Component should matches snapshot 1`] = `
+<span
+  className="row"
+>
+  <span
+    className="col-6 col-md-4 col-lg-3 rti-no-gutter"
+  >
+    <a
+      href="/movie"
+      onClick={[Function]}
+    >
+      <img
+        alt="Spider-Man: Far from Home"
+        className="img-fluid link"
+        src="https://image.tmdb.org/t/p/original/rjbNpRMoVvqHmhmksbokcyCr7wn.jpg"
+      />
+    </a>
+  </span>
+</span>
+`;

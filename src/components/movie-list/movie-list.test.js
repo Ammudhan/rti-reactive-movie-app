@@ -2,8 +2,7 @@ import React from "react";
 import renderer, { create } from "react-test-renderer";
 import MovieList from "./movie-list";
 import MovieService from "../../services/movieService";
-import {MemoryRouter} from "react-router-dom";
-import {Link} from "react-router-dom";
+import {StaticRouter} from "react-router-dom";
 
 describe("Movie List Component", () => {
 
@@ -23,12 +22,37 @@ describe("Movie List Component", () => {
         const promise = Promise.resolve(mockData);
         mock.mockImplementation(() => promise);
         create(
-            <MemoryRouter>
+            <StaticRouter>
                 <MovieList/>
-            </MemoryRouter>
+            </StaticRouter>
         );
         await promise;
         expect(mock).toHaveBeenCalled();
+    });
+
+    it('should matches snapshot', async () => {
+        const mockData = {
+            data: {
+                results: [
+                    {
+                        id: 429617,
+                        original_title: "Spider-Man: Far from Home",
+                        poster_path: "/rjbNpRMoVvqHmhmksbokcyCr7wn.jpg"
+                    }
+                ]
+            }
+        };
+        const mock = jest.spyOn(MovieService, "getMovies");
+        const promise = Promise.resolve(mockData);
+        mock.mockImplementation(() => promise);
+        const component = renderer.create(
+            <StaticRouter>
+                <MovieList/>
+            </StaticRouter>
+        );
+        await promise;
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
     });
 
 });

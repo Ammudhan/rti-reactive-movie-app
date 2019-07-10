@@ -32,6 +32,7 @@ describe("Movie Card Component", () => {
         await promise;
         expect(mock).toHaveBeenCalled();
         const instance = component.getInstance();
+        expect(instance._isMounted).toBe(true);
         expect(instance.state.movie).toBe(movie);
         expect(instance.state.error).toBe('');
     });
@@ -59,10 +60,8 @@ describe("Movie Card Component", () => {
         const mock = jest.spyOn(MovieService, "getMovieById");
         const promise = Promise.resolve(mockData);
         mock.mockImplementation(() => promise);
-
         const component = renderer.create(<MovieCard {...props}/>);
         await promise;
-
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
     });
