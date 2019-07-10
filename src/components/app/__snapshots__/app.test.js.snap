@@ -1,5 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`APP Component should matches snapshot 1`] = `
+Array [
+  <span
+    className="row"
+  >
+    <span
+      className="col-12 page-layout d-flex align-items-center justify-content-between"
+    >
+      <h1
+        className="title"
+      >
+        Pop Movie
+      </h1>
+      <span
+        className="nav-icon"
+      />
+    </span>
+  </span>,
+  <div
+    className="body-content"
+  >
+    <movie-list />
+  </div>,
+  <span
+    className="row"
+  >
+    <span
+      className="col-12 page-layout d-flex align-items-center justify-content-center"
+    >
+      <h1
+        className="footer-title"
+      >
+        Footer
+      </h1>
+    </span>
+  </span>,
+]
+`;
+
 exports[`APP matches snapshot 1`] = `
 Array [
   <span

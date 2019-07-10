@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import Footer from './footer';
 
-describe('Footer', () => {
+describe('Footer Component', () => {
 
-    it('renders without crashing', () => {
+    it('should renders without crashing', () => {
         const div = document.createElement('div');
         ReactDOM.render(<Footer />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
 
-    it('matches snapshot', () => {
+    it('should matches snapshot', () => {
         const
             tree = renderer.create(
                 <Footer />

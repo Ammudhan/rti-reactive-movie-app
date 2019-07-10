@@ -10,7 +10,7 @@ const MovieService = {
     getMovieById: (movieId) => {
         const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`;
         return axios.get(url);
-    }
+    },
 };
 
 export default MovieService;

@@ -17,8 +17,10 @@ export default class MovieCard extends Component {
 
     componentDidMount () {
         this._isMounted = true;
-        const { movieId } = this.props.location.state;
-        this.getMovieById(movieId);
+        if (this.props.location) {
+            const { movieId } = this.props.location.state;
+            this.getMovieById(movieId);
+        }
     };
 
     componentWillUnmount() {

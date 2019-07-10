@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import NotFound from './not-found';
 
-describe('NotFound', () => {
+describe('NotFound Component', () => {
 
-    it('renders without crashing', () => {
+    it('should renders without crashing', () => {
         const div = document.createElement('div');
         ReactDOM.render(<NotFound />, div);
         ReactDOM.unmountComponentAtNode(div);
     });
 
-    it('matches snapshot', () => {
+    it('should matches snapshot', () => {
         const
             tree = renderer.create(
                 <NotFound />

@@ -4,9 +4,9 @@ import renderer from 'react-test-renderer';
 import Header from './header';
 import {BrowserRouter as Router} from "react-router-dom";
 
-describe('Header', () => {
+describe('Header Component', () => {
 
-    it('renders without crashing', () => {
+    it('should renders without crashing', () => {
         const div = document.createElement('div');
         ReactDOM.render(
             <Router>
@@ -15,7 +15,7 @@ describe('Header', () => {
         ReactDOM.unmountComponentAtNode(div);
     });
 
-    it('matches snapshot', () => {
+    it('should matches snapshot', () => {
         const
             tree = renderer.create(
                 <Router>

@@ -8,9 +8,9 @@ import MovieList from "../movie-list"; //Import the MovieList component for mock
 // Mocking the nested components
 jest.mock("../movie-list", () => () => (<movie-list />));
 
-describe('APP', () => {
+describe('APP Component', () => {
 
-  it('renders without crashing', () => {
+  it('should renders without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(
         // TODO - Need to explore more on the Memory Router & Enzyme
@@ -20,7 +20,7 @@ describe('APP', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('matches snapshot', () => {
+  it('should matches snapshot', () => {
     const
         tree = renderer.create(
             <MemoryRouter initialEntries={['/']}>

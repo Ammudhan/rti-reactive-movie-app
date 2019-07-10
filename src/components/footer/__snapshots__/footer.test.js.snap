@@ -1,5 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Footer Component should matches snapshot 1`] = `
+<span
+  className="row"
+>
+  <span
+    className="col-12 page-layout d-flex align-items-center justify-content-center"
+  >
+    <h1
+      className="footer-title"
+    >
+      Footer
+    </h1>
+  </span>
+</span>
+`;
+
 exports[`Footer matches snapshot 1`] = `
 <span
   className="row"
