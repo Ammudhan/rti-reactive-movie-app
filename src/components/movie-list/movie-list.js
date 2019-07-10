@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import API from "../../services/movieService";
+import MovieService from "../../services/movieService";
 import './movie-list.scss';
 import {Link} from "react-router-dom";
 import ArrayUtils from "../../utils/array-utils";
@@ -27,7 +27,7 @@ export default class MovieList extends Component {
 
     getMovies = async() => {
         try {
-            const response = await API.getMovies();
+            const response = await MovieService.getMovies();
             if (this._isMounted) {
                 this.setState({
                     movies: ArrayUtils.getUniqueObjects(response.data.results, "id")

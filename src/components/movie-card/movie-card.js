@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './movie-card.scss';
-import API from "../../services/movieService";
+import MovieService from "../../services/movieService";
 import DateUtils from "../../utils/date-utils";
 
 export default class MovieCard extends Component {
@@ -27,7 +27,7 @@ export default class MovieCard extends Component {
 
     getMovieById = async(movieId) => {
         try {
-            const response = await API.getMovieById(movieId);
+            const response = await MovieService.getMovieById(movieId);
             if (this._isMounted) {
                 this.setState({
                     movie: response.data
