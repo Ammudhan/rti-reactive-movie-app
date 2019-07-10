@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+@import "../../styles/functions";
+
+.title {
+  color: $fg-color-primary;
+  font-weight: $default-font-size;
+  font-size: REM(30px);
+}
+
+.nav-icon:after {
+  content: '\2807';
+  font-size: REM(40px);
+  color: $fg-color-primary;
+}

@@ -1,0 +1,8 @@
+/* functions */
+
+@import "./global";
+
+@function REM($pixel) {
+  $remSize: $pixel / $base-font-size;
+  @return #{$remSize}rem;
+}

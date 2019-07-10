@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+@import "../../styles/functions";
+
+.card-layout {
+  padding: 0 REM(35px) 0 REM(40px) !important;
+  margin-bottom: REM(35px);
+}
+
+.card-title {
+  background-color: $bg-color-green;
+  color: $fg-color-primary;
+  font-size: REM(32px);
+  font-weight: $fg-color-primary;
+  min-height: REM(100px);
+  padding-left: REM(35px);
+}
+
+.overview {
+  font-size: REM(12px);
+  letter-spacing: 0.28px;
+  text-align: left;
+  color: $fg-color-gray;
+  margin-top: REM(35px);
+}
+
+.overview-desktop {
+  @extend .overview;
+  margin-top: REM(25px);
+  font-size: REM(18px);
+}
+
+.card-info {
+  font-size: REM(18px);
+  font-weight: 300;
+  color: $fg-color-gray;
+  div {
+    margin-bottom: REM(10px);
+    &:first-child {
+      margin-top: REM(5px);
+    }
+  }
+}
+
+.favorite-button {
+  min-height: REM(40px);
+  background-color: $bg-color-light-green;
+  color: $fg-color-gray;
+  font-size: REM(18px);
+}

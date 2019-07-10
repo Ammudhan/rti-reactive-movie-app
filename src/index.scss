@@ -1,0 +1,32 @@
+@import "./styles/variables";
+@import "./styles/functions";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  .page-layout {
+    min-height: REM(100px);
+    background-color: $bg-color-primary;
+    padding: 0 REM(35px) 0 REM(40px) !important;
+  }
+
+  .rti-no-gutter {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .link {
+    cursor: pointer;
+  }
+
+  .body-content {
+    min-height: REM(600px);
+  }
+}
+
+

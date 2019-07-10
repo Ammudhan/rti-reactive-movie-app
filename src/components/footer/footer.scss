@@ -1,0 +1,8 @@
+@import "../../styles/variables";
+@import "../../styles/functions";
+
+.footer-title {
+    color: $fg-color-primary;
+    font-weight: $default-font-size;
+    font-size: REM(30px);
+}
