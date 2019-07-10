@@ -21,9 +21,7 @@ Array [
   <div
     className="body-content"
   >
-    <span
-      className="row"
-    />
+    <movie-list />
   </div>,
   <span
     className="row"
