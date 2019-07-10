@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie Card Component should matches snapshot 1`] = `
+<span
+  className="row"
+>
+  <span
+    className="col-12 card-layout card-title d-flex align-items-center justify-content-start"
+  >
+    Spider-Man: Far from Home
+  </span>
+  <span
+    className="col-5 col-md-4 offset-1 "
+  >
+    <img
+      alt="Spider-Man: Far from Home"
+      className="img-fluid link"
+      src="https://image.tmdb.org/t/p/w500/rjbNpRMoVvqHmhmksbokcyCr7wn.jpg"
+    />
+  </span>
+  <span
+    className="col-5 offset-md-1 card-info"
+  >
+    <div>
+      2019
+    </div>
+    <div>
+       mins
+    </div>
+    <div>
+      7.8
+       / 10
+    </div>
+    <div>
+      <button
+        className="favorite-button"
+      >
+        Mark As Favorite
+      </button>
+    </div>
+    <div
+      className="overview-desktop d-none d-md-block"
+    >
+      Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.
+    </div>
+  </span>
+  <span
+    className="col-12 d-none d-md-block mb-5"
+  />
+  <span
+    className="col-12 d-md-none card-layout overview d-flex align-items-center"
+  >
+    Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.
+  </span>
+</span>
+`;
