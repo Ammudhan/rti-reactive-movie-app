@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const apiKey = '36337f558eed3e3a13c925c45bf13874';
+const apiKey = '<<<API_KEY>>>';
 
 const MovieService = {
     getMovies: () => {
